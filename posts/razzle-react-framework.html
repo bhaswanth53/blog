@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="../assets/images/fav.png" />
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="ASS7vO87N9KtAc1LTRcwcPwyGeivYYTxE7qXyT54">
+    <title>Razzle - A Server-Rendered Framework For React || Bhaswanth Chiruthanuru</title>
+
+    <meta name="description" content="I love React JS. But I always had a tough time building server-rendered applications with React. Soon I found this awesome framework for React JS server-side applications which solved all my issues." />
+    <meta name="keywords" content="Bhaswanth, Bhaswanth Chiruthanuru, Javascript, PHP, Laravel Developer, Javascript, Vue JS, React JS, Node JS, Website Developer" />
+
+    <meta name="title" content="Razzle - A Server-Rendered Framework For React || Bhaswanth Chiruthanuru">
+    <meta name="description" content="I love React JS. But I always had a tough time building server-rendered applications with React. Soon I found this awesome framework for React JS server-side applications which solved all my issues.">
+    <meta name="keywords" content="Bhaswanth, Bhaswanth Chiruthanuru, Javascript, PHP, Laravel Developer, Javascript, Vue JS, React JS, Node JS, Website Developer">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="Bhaswanth Chiruthanuru">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://bhaswanth.com/">
+    <meta property="og:title" content="Razzle - A Server-Rendered Framework For React || Bhaswanth Chiruthanuru">
+    <meta property="og:description" content="I love React JS. But I always had a tough time building server-rendered applications with React. Soon I found this awesome framework for React JS server-side applications which solved all my issues.">
+    <meta property="og:image" content="http://bhaswanth.com/banner.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="http://bhaswanth.com/">
+    <meta name="twitter:title" content="{{ blog_title }}">
+    <meta name="twitter:description" content="I love React JS. But I always had a tough time building server-rendered applications with React. Soon I found this awesome framework for React JS server-side applications which solved all my issues.">
+    <meta name="twitter:image" content="http://bhaswanth.com/banner.jpg">
+    <meta name="twitter:site" content="bhaswanth">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="../assets/css/site.css" rel="stylesheet">
+    <link href="../assets/css/loader.css" rel="stylesheet">
+    <link href="../assets/css/uikit.min.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175692329-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-175692329-1');
+    </script>
+
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="overlay">
+        <div class="loader">Loading...</div>
+    </div>
+    <div id="app">
+        <div
+            uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 100">
+            <nav class="uk-navbar-container cus-nav" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo olink" href="http://bhaswanth.com" offset='100'>
+                        <img src="../assets/images/1.png" alt="Logo" />
+                    </a>
+                </div>
+                <div class="uk-navbar-right uk-visible@m">
+                    <ul class="uk-navbar-nav">
+                        <li><a class="olink" href="http://bhaswanth.com"><span>01. </span>Profile</a></li>
+                        <li class="resume"><a href="https://sourcerer.io/bhaswanth53" target="_blank"
+                                rel="noopener noreferrer"><span>Sourcerer</span></a></li>
+                        <li class="resume"><a href="http://bhaswanth.com/blog" target="_blank"
+                                rel="noopener noreferrer"><span>Blog</span></a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-hidden@m">
+                    <ul class="uk-navbar-nav">
+                        <li class="navicon"><a href="#" uk-toggle="target: #sidemenu"><i class="fa fa-bars"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div id="sidemenu" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+                <a class="uk-offcanvas-close uk-close" href="#">
+                    <i class="fa fa-times"></i>
+                </a>
+                <a class="uk-navbar-item uk-logo olink" href="http://bhaswanth.com" offset='100'>
+                    <img src="../assets/images/1.png" alt="Logo" style="width: 100px" />
+                </a>
+                <div class="side-img uk-margin uk-text-center">
+                    <img src="../assets/images/me.jpg" alt="Profile Pic" />
+                </div>
+                <div class="uk-text-center nav-div">
+                    <ul class="uk-nav uk-nav-default">
+                        <li><a class="olink a" href="http://bhaswanth.com"><span>01. </span>Profile</a></li>
+                        <li class="resume"><a href="https://sourcerer.io/bhaswanth53" target="_blank"
+                                rel="noopener noreferrer"><span>Sourcerer</span></a></li>
+                        <li class="resume"><a href="http://bhaswanth.com/blog" target="_blank"
+                                rel="noopener noreferrer"><span>Blog</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <main class="">
+            <section class="post-banner">
+                <div class="post-banner-div">
+                    <div class="uk-container py-50">
+                        <p class="">
+                            <span class="post-date uk-margin-remove">Published on</span>
+                            <span class="post-date post-category"><i class="fa fa-calendar"></i> Oct 31, 2020</span>
+                        </p>
+                        <h1 class="post-title">
+                            Razzle - A Server-Rendered Framework For React
+                        </h1>
+                        <div class="post-author">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="profile-img-div">
+                                            <img src="../assets/images/me.jpg" class="profile-img" />
+                                        </div>
+                                    </td>
+                                    <td class="author">
+                                        <p>Author</p>
+                                        <a href="" class="h1">
+                                            <p class="auth-name">Bhaswanth Chiruthanuru</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="first-tags">
+                            <ul>
+                                <li><a href="javascript:void(0);">PHP & MySQL</a></li>
+                                <li><a href="javascript:void(0);">Javascrpt</a></li>
+                                <li><a href="javascript:void(0);">Node JS & Mongo DB</a></li>
+                                <li><a href="javascript:void(0);">Vue JS</a></li>
+                                <li><a href="javascript:void(0);">React JS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br /><br /><br />
+            </section>
+
+            <section class="post-body">
+                <div class="uk-container py-50">
+                    <div class="uk-grid-match uk-flex-center" uk-grid>
+                        <div class="uk-width-5-6@m post-start">
+                            <div class="post-img">
+                                <img src="./BS201031082608311020114306.JPG" alt="BS201031082608311020114306.JPG" />
+                            </div>
+                            <div class="post-content">
+                                <p>Every one loves Javascript today, aren't you?</p><p>Great! So you love it too. If you aren't my friend, trust me, you will love it sooner or later.</p><div>No wonder Javascript gains this much popularity these days, because it will be used to create web applications, mobile applications, desktop applications, console applications, artificial intelligence, etc. etc. In today's world Javascript is involved in every domain.</div><div>Apart from that popularity, there are new Javascript frameworks and libraries are releasing every day. Among those many frameworks, <a href="https://reactjs.org/" target="_blank">React JS</a> is the most popular one.</div><div>React JS is the fastest and flexible Javascript which is developed by <b>Facebook</b> and is easiest for beginners to learn it. React JS can be used in creating Single Page Applications, Mobile Applications, and even in Desktop Applications also. But despite all the superpower of React, it still uses Javascript DOM. So the code will not be crawled by search engines. Not only React but other Javascript frameworks like <b>Vue JS</b> and <b>Angular JS</b> also not be crawled completely by search engines.</div><div>At the development stage, it may not look like a big problem to care for. But trust me, you will struggle at this part when it comes to SEO. To increase the SEO of the page, the page needs to crawl by search engines completely. To make this happen, we need to render our page from the server-side.</div><div>"Server Rendering using Javascript is the most headache part", this is the sentence told once upon a time. But now the latest technologies like <b>Node JS</b> and <b>Deno</b> are available to compile Javascript to server-side code. Using these technologies, we can create server-side applications using Javascript only.</div><div>But the technologies mentioned above are not programming languages, those are just compilers. This means, we still need to write code to make the compiler understand which code to be rendered from the server-side. To make this happen, there are some libraries such as <b>Next JS</b>, <b>Nuxt JS</b> available which we can mix with the Javascript frameworks to render from the server-side.</div><div>If we are about to talk about all the frameworks and libraries developed using Javascript, maybe we need to talk continuously for a year, but sadly, we don't have that much time and we don't have to learn every trending technology to be perfect. because once a wise man said, "It is better to master one niche completely, instead of learning 1000 niches incompletely". -- Of course, that's not me.</div><div>But I am here to tell you about an amazing server-side framework for React which I found out recently, and its name is <a href="https://razzlejs.org/" target="_blank">Razzle</a>.</div><div>Razzle is one amazing server-side framework for React JS. We don't need to learn Next JS separately when we are using Razzle. <b>Next JS</b> is already integrated with Razzle and guess what, Razzle also supports Single Page Applications. But one thing that makes Razzle special is, it doesn't reload the page to render new changes in the development server, instead it automatically updates the particular content only where we modified on the page without reloading the page.</div><div>And Razzle is easy to learn since it is React only. Since Razzle works on the Node JS environment, we need Node JS installed in our machine to compile the code.</div><div><div>Following the below links to learn more about Razzle.</div><div>Website: <a href="https://razzlejs.org/" target="_blank">https://razzlejs.org/</a> </div><div>Github: <a href="https://github.com/jaredpalmer/razzle" target="_blank">https://github.com/jaredpalmer/razzle</a><a href="https://github.com/jaredpalmer/razzle" target="_blank"></a></div><div>And I am also trying to explore more on Razzle, but trust me, "the more you dig Javascript, the more you fall in love with it" -- Of course, this is me saying Lol :)<br></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="upper-footer">
+            <div class="uk-container py-50">
+                <div class="uk-grid-match" uk-grid>
+                    <div class="uk-width-1-4@m">
+                        <div class="idl-card">
+                            <a href="https://internetdefenseleague.org" target="_blank">
+                                <img src="https://internetdefenseleague.org/images/badges/final/shield_badge.png"
+                                    alt="Member of The Internet Defense League" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="uk-width-2-3@m">
+                        <div class="sub-card">
+                            <h1>Subscribe Newsletter</h1>
+                            <p>We bring you the best articles and ideas from around the web, and what we think about
+                                them.</p>
+                            <form class="" method="POST" action="https://formspree.io/f/mrgokpyn">
+                                <div class="uk-margin sub-email">
+                                    <input type="email" class="uk-input uk-width-2-3@m" name="email" id="email"
+                                        placeholder="youremail@gmail.com" />
+                                </div>
+                                <div class="uk-margin">
+                                    <button type="submit" class="uk-button load-button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="uk-container uk-text-center">
+                <div class="uk-button-group">
+                    <a href="https://www.facebook.com/bhaswanth.kumar.9" target="_blank">
+                        <button class="social-button"><i class="fa fa-facebook"></i></button>
+                    </a>
+                    <a href="https://twitter.com/bhaswanth4?lang=en" target="_blank">
+                        <button class="social-button"><i class="fa fa-twitter"></i></button>
+                    </a>
+                    <a href="https://linkedin.com/in/bhaswanthchittanoor" target="_blank">
+                        <button class="social-button"><i class="fa fa-linkedin"></i></button>
+                    </a>
+                    <a href="https://www.instagram.com/i_the_crazy_geek/" target="_blank">
+                        <button class="social-button"><i class="fa fa-instagram"></i></button>
+                    </a>
+                    <a href="https://github.com/bhaswanth53" target="_blank">
+                        <button class="social-button"><i class="fa fa-github"></i></button>
+                    </a>
+                    <a href="https://codepen.io/bhaswanth_chiruthanuru" target="_blank">
+                        <button class="social-button"><i class="fa fa-codepen"></i></button>
+                    </a>
+                </div>
+            </div>
+            <p class="copyrights">&copy; All Rights Reserved - Designed & Developed by <a
+                    href="http://bhaswanth.com/">Bhaswanth Chiruthanuru</a></p>
+        </footer>
+    </div>
+
+    <button class="totop" id="toTop"><i class="fa fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script type="text/javascript">
+        window._idl = {};
+        _idl.variant = "modal";
+        (function () {
+            var idl = document.createElement('script');
+            idl.async = true;
+            idl.src = 'https://members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' +
+                (_idl.campaign || '') + '&variant=' + (_idl.variant || 'modal');
+            document.getElementsByTagName('body')[0].appendChild(idl);
+        })();
+    </script>
+    <script src="../assets/js/uikit.min.js"></script>
+    <script src="../assets/js/uikit-icons.min.js"></script>
+    <script src="../assets/js/site.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Person",
+            "name": "Bhaswanth Chiruthanuru",
+            "url": "http://bhaswanth.com/blog",
+            "image": "https://avatars0.githubusercontent.com/u/19569771?s=400&u=d746b7cc5b07092c350b1db3e4689066c78a125f&v=4",
+            "sameAs": [
+                "https://www.facebook.com/bhaswanth.kumar.9",
+                "https://twitter.com/bhaswanth4?lang=en",
+                "https://www.instagram.com/its_me_man_of_attitude/?hl=en",
+                "https://www.youtube.com/channel/UCFCaYqsBSamJOI1I9bcMu5w",
+                "https://linkedin.com/in/bhaswanthchittanoor",
+                "https://github.com/bhaswanth53",
+                "http://bhaswanth.com/",
+                "https://bhaswanthchiruthanuru.tumblr.com/"
+            ],
+            "jobTitle": "Full-Stack Web Developer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Freelancer"
+            }
+        }
+    </script>
+</body>
+
+</html>

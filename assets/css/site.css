@@ -716,6 +716,13 @@ section.post-body .post-content p {
     font-size: 16px;
     color: rgb(255, 255, 255, 0.6);
 }
+section.post-body .post-content div {
+	font-family: 'PT Mono', monospace;
+    letter-spacing: 0.89;
+    font-size: 16px;
+    color: rgb(255, 255, 255, 0.6);
+	margin-bottom: 20px;
+}
 section.post-body .post-content a {
     font-family: 'PT Mono', monospace;
     letter-spacing: 0.89;
